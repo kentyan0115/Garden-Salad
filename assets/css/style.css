@@ -38,7 +38,7 @@ html {
     font-size: 1.5640273705vw;
   }
 }
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   html {
     font-size: 16px;
   }
@@ -246,6 +246,9 @@ select::-ms-expand {
   footer
 */
 /*
+  form
+*/
+/*
   gnav
 */
 /*
@@ -312,6 +315,9 @@ select::-ms-expand {
 /*
   header
 */
+/*
+  image
+*/
 .l-inner {
   width: 100%;
   padding-right: 20px;
@@ -321,12 +327,33 @@ select::-ms-expand {
 }
 @media screen and (min-width: 768px) {
   .l-inner {
-    max-width: 1050px;
+    max-width: 1130px;
     padding-right: 25px;
     padding-left: 25px;
   }
 }
 
 /*
+  section-subtitle 
+*/
+/*
+  section-title
+*/
+/*
+  about
+*/
+/*
+  concept
+*/
+/*
+  contact
+*/
+/*
+  menu
+*/
+/*
   mv
+*/
+/*
+  shop
 */

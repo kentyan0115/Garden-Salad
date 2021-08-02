@@ -2,5 +2,27 @@
   gnav
 */
 .gnav {
+  height: inherit;
+}
+
+.gnav__menu {
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.gnav__menu-item {
+  font-family: $second-font-family;
+  color: #fff;
+  font-size: rem(14);
+  height: inherit;
+  &:not(:last-child) {
+    margin-right: rem(20);
+  }
   
+  a {
+    display: flex;
+    align-items: center;
+    height: inherit;
+  }
 }

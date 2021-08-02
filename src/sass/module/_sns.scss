@@ -1,0 +1,16 @@
+/*
+  sns
+*/
+.sns {
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem(35);
+}
+
+.sns__item {
+  width: rem(50);
+  display: block;
+  &:not(:last-child) {
+    margin-right: rem(40);
+  }
+}

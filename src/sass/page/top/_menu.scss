@@ -2,5 +2,128 @@
   menu
 */
 .menu {
-  
+  padding: rem(24) 0;
+  background: $base-color;
+}
+
+.menu__content {
+  border: rem(1) solid #fff;
+  padding: rem(32) rem(18);
+}
+
+.menu__subtitle {
+  color: #fff;
+}
+
+.menu__title {
+  color: #fff;
+  margin-bottom: rem(48);
+  &::after {
+    background: #fff;
+  }
+}
+
+.menu__pfc {
+  text-align: center;
+  color: #fff;
+  font-size: rem(16);
+  font-weight: 500;
+  margin-bottom: rem(319);
+} 
+
+.menu__items {
+  margin-bottom: rem(48);
+}
+
+.menu__item {
+  background: $main-color;
+  position: relative;
+  text-align: center;
+  padding: rem(58) 0 rem(44);
+
+  &:not(:last-child) {
+    margin-bottom: rem(319);
+  }
+
+  &:first-child {
+    padding: 0 0 rem(42);
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: calc(100% - 20px);
+    height: calc(100% - 20px);
+    border: rem(1) solid $font-color;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.menu__item-img {
+  position: absolute;
+  width: rem(305);
+  left: 50%;
+  transform: translateX(-50%);
+  top: rem(-260);
+  z-index: 30;
+}
+
+.menu__item-body {
+
+}
+
+.menu__item-title {
+  font-weight: 700;
+  font-size: rem(24);
+  margin-bottom: rem(15);
+}
+
+.menu__item-price {
+  font-family: $second-font-family;
+  font-size: rem(30);
+  margin-bottom: rem(15);
+}
+
+.menu__item-price-mark {
+  font-size: rem(18);
+  margin-right: rem(3);
+} 
+
+.menu__item-price-tax {
+  font-family: $base-font-family;
+  font-weight: 500;
+  font-size: rem(12);
+  letter-spacing: 0.1em;
+}
+
+.menu__item-pfc {
+  font-size: rem(14);
+}
+
+.menu__item-recommend {
+  background: $accent-color;
+  color: #fff;
+  margin: 0 auto;
+  margin-bottom: rem(24);
+  padding: rem(40) 0 rem(15);
+  width: rem(211);
+  position: relative;
+  z-index: 25;
+}
+
+.menu__item-recommend-title {
+  font-size: rem(18);
+  font-weight: 500;
+}
+
+.menu__item-recommend-subtitle {
+  font-family: $third-font-family;
+  font-size: rem(12);
+}
+
+
+.menu__instagram {
+
 }

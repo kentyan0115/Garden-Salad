@@ -2,5 +2,20 @@
   fnav 
 */
 .fnav {
-  
+  margin-bottom: rem(35);
+}
+
+.fnav__menu {
+  display: flex;
+  justify-content: center;
+}
+
+.fnav__menu-item {
+  font-family: $second-font-family;
+  font-size: rem(16);
+  display: block;
+  padding: rem(5) 0;
+  &:not(:last-child) {
+    margin-right: rem(32);
+  }
 }

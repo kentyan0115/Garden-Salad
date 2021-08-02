@@ -2,5 +2,20 @@
   section-title
 */
 .section-title {
-  
+  font-family: $second-font-family;
+  font-size: rem(32);
+  line-height: 1.2;
+  text-align: center;
+  padding-bottom: rem(12);
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: rem(50);
+    height: rem(2);
+    background: $accent-color;
+  }
 }

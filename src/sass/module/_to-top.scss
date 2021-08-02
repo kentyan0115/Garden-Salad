@@ -1,0 +1,13 @@
+/*
+  to-top
+*/
+.to-top {
+  position: fixed;
+  width: rem(70);
+  right: rem(20);
+  bottom: rem(305);
+  z-index: 100;
+  &:hover {
+    opacity: 1;
+  }
+}

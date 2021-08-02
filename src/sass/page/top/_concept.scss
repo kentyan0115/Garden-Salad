@@ -2,5 +2,34 @@
   concept
 */
 .concept {
-  
+  text-align: center;
+  color: #fff;
+  background: $base-color;
+  padding: rem(48) rem(10) rem(64);
+  position: relative;
+}
+
+.concept__title {
+  font-size: rem(20);
+  font-weight: 700;
+  margin-bottom: rem(24);
+}
+
+.concept__text {
+  font-size: rem(16);
+
+  &:not(:last-child) {
+    margin-bottom: rem(15);
+  }
+}
+
+.concept__bg {
+  color: rgba(103, 103, 103, 0.3);
+  font-size: rem(110);
+  font-family: $second-font-family;
+  line-height: 0.72;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-align: right;
 }

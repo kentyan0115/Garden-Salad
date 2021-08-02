@@ -36,5 +36,15 @@ jQuery(function () {
     } else {
       jQuery('.to-top').hide();
     }
+  }); // フォームのバリデーション
+
+  jQuery('.js-check').on('click', function () {
+    if (jQuery('.js-checkbox').prop("checked") == true) {
+      jQuery('.js-submit').addClass('form__submit-btn--active');
+      jQuery('.js-submit').prop('disabled', false);
+    } else {
+      jQuery('.js-submit').removeClass('form__submit-btn--active');
+      jQuery('.js-submit').prop('disabled', true);
+    }
   });
 });

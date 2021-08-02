@@ -2,5 +2,62 @@
   about
 */
 .about {
-  
+  background: $main-color;
+  padding: rem(64) 0;
+}
+
+.about__title {
+  margin-bottom: rem(56);
+}
+
+.about__items {
+
+}
+
+.about__item {
+  &:not(:last-child) {
+    margin-bottom: rem(56);
+  }
+
+  &:last-child {
+    .about__item-text {
+      margin-bottom: rem(48);
+    }
+  }
+}
+
+.about__item-title {
+  font-size: rem(24);
+  font-weight: 700;
+  margin-bottom: rem(16);
+  position: relative;
+  z-index: 30;
+
+  span {
+    color: $accent-color;
+  }
+}
+
+.about__item-text {
+  font-size: rem(16);
+  margin-bottom: rem(32);
+  position: relative;
+  z-index: 30;
+}
+
+.about__item-number {
+  color: rgba(255, 255, 255, 0.8);
+  font-family: $second-font-family;
+  font-size: rem(180);
+  line-height: 1;
+  position: absolute;
+  right: rem(-15);
+  top: rem(-160);
+  z-index: 20;
+}
+
+.about__item-img {
+  max-width: rem(500);
+  margin: 0 auto;
+  position: relative;
 }

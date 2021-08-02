@@ -2,5 +2,17 @@
   header
 */
 .header {
-  
+  height: rem(60);
+  background: $base-color;
+}
+
+.header__inner {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: rem(55);
 }

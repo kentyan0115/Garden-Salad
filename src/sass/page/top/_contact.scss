@@ -2,5 +2,25 @@
   contact
 */
 .contact {
-  
+  background: url(../img/contact-bg.jpg) no-repeat center center / cover;
+  padding: rem(64) 0;
 }
+
+.contact__content {
+  background: $main-color;
+  padding: rem(63) rem(15);
+}
+
+.contact__title {
+  margin-bottom: rem(48);
+}
+
+.contact__text {
+  font-size: rem(16);
+  margin-bottom: rem(30);
+}
+
+.contact__form {
+
+}
+

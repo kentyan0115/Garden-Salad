@@ -40,6 +40,12 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
   width: 100%;
   border: rem(1) solid $base-color;
   padding: 0 rem(16);
+  
+  &:hover, &:focus {
+    transition: all 0.3s;
+    border: rem(1) solid $accent-color;
+    box-shadow: 0 0 rem(10) rgba(21, 151, 65, 0.15);
+  }
 }
 
 input[type="text"], input[type="email"], input[type="tel"] {
@@ -48,12 +54,13 @@ input[type="text"], input[type="email"], input[type="tel"] {
 
 textarea {
   height: rem(160);
-  resize: none;
   padding-top: rem(12);
+  // resize: none;
 }
 
 .form__check {
   margin-bottom: rem(40);
+  text-align: center;
 }
 
 .form__check-box+.form__check-text {
@@ -62,6 +69,24 @@ textarea {
   margin: 0 0.2em 0;
   padding-left: rem(40);
   position: relative;
+  transition: 1s;
+
+  &:hover {
+    &::before {
+      transition: all 0.2s;
+      border: rem(1) solid $accent-color;
+      box-shadow: 0 0 rem(10) rgba(21, 151, 65, 0.15);
+    }
+  }
+  
+  &:active {
+    transition: all 0.5s;
+    &::before {
+      transition: all 1s;
+      background: rgba(21, 151, 65, 0.15);
+      box-shadow: 0 0 rem(10) rgba(21, 151, 65, 0.15);
+    }
+  }
 
   &::before,
   &::after {
@@ -85,15 +110,15 @@ textarea {
   }
 
   &::after {
-    border-bottom: rem(4) solid $base-color;
-    border-left: rem(4) solid $base-color;
-    height: rem(12);
-    width: rem(25);
+    border-bottom: rem(2) solid $accent-color;
+    border-left: rem(2) solid $accent-color;
+    height: rem(10);
+    width: rem(20);
     margin-top: rem(-2);
     opacity: 0;
     transform: translateY(-50%) rotate(-45deg);
-    transition: all 0.3s ease 0s;
-    left: rem(-2);
+    transition: all 0.1s ease 0s;
+    left: rem(0);
   }
 }
 
@@ -102,21 +127,30 @@ textarea {
 }
 
 .form__privacy {
-  pointer-events: none;
+  // pointer-events: none;
+  transform: all 0.3s;
   color: $accent-color;
   border-bottom: rem(1) solid $accent-color;
+
+  &:hover {
+    opacity: 0.7;
+  }
 }
 
 .form__submit-btn {
   color: #fff;
   display: block;
-  background: #ccc;
+  background: #bdbdbd;
   margin: 0 auto;
   width: rem(300);
   height: rem(58);
   height: rem(58);
   font-size: rem(18);
   transition: background-color 0.3s;
+  
+  &:hover {
+    background: rgba(21, 151, 65, 0.7);
+  }
 }
 
 .form__submit-btn--active {

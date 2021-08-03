@@ -266,12 +266,42 @@ select::-ms-expand {
   font-size: 16px;
   font-size: 1rem;
   display: block;
-  padding: 5px 0;
-  padding: 0.3125rem 0;
+  position: relative;
 }
 .fnav__menu-item:not(:last-child) {
   margin-right: 32px;
   margin-right: 2rem;
+}
+.fnav__menu-item::after {
+  position: absolute;
+  bottom: 16px;
+  bottom: 1rem;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  height: 0.125rem;
+  background: #159741;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.fnav__menu-item:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
+.fnav__menu-item a {
+  display: inline-block;
+  padding: 20px 0;
+  padding: 1.25rem 0;
+}
+.fnav__menu-item a:hover {
+  opacity: 1;
 }
 
 /*
@@ -339,6 +369,14 @@ input[type=text], input[type=email], input[type=tel], textarea {
   padding: 0 16px;
   padding: 0 1rem;
 }
+input[type=text]:hover, input[type=text]:focus, input[type=email]:hover, input[type=email]:focus, input[type=tel]:hover, input[type=tel]:focus, textarea:hover, textarea:focus {
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  border: 1px solid #159741;
+  border: 0.0625rem solid #159741;
+  -webkit-box-shadow: 0 0 0.625rem rgba(21, 151, 65, .15);
+          box-shadow: 0 0 0.625rem rgba(21, 151, 65, .15);
+}
 
 input[type=text], input[type=email], input[type=tel] {
   height: 56px;
@@ -348,7 +386,6 @@ input[type=text], input[type=email], input[type=tel] {
 textarea {
   height: 160px;
   height: 10rem;
-  resize: none;
   padding-top: 12px;
   padding-top: 0.75rem;
 }
@@ -356,6 +393,7 @@ textarea {
 .form__check {
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
+  text-align: center;
 }
 
 .form__check-box + .form__check-text {
@@ -365,6 +403,27 @@ textarea {
   padding-left: 40px;
   padding-left: 2.5rem;
   position: relative;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+.form__check-box + .form__check-text:hover::before {
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  border: 1px solid #159741;
+  border: 0.0625rem solid #159741;
+  -webkit-box-shadow: 0 0 0.625rem rgba(21, 151, 65, .15);
+          box-shadow: 0 0 0.625rem rgba(21, 151, 65, .15);
+}
+.form__check-box + .form__check-text:active {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.form__check-box + .form__check-text:active::before {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  background: rgba(21, 151, 65, .15);
+  -webkit-box-shadow: 0 0 0.625rem rgba(21, 151, 65, .15);
+          box-shadow: 0 0 0.625rem rgba(21, 151, 65, .15);
 }
 .form__check-box + .form__check-text::before, .form__check-box + .form__check-text::after {
   position: absolute;
@@ -391,23 +450,23 @@ textarea {
   top: 60%;
 }
 .form__check-box + .form__check-text::after {
-  border-bottom: 4px solid #2f2f2f;
-  border-bottom: 0.25rem solid #2f2f2f;
-  border-left: 4px solid #2f2f2f;
-  border-left: 0.25rem solid #2f2f2f;
-  height: 12px;
-  height: 0.75rem;
-  width: 25px;
-  width: 1.5625rem;
+  border-bottom: 2px solid #159741;
+  border-bottom: 0.125rem solid #159741;
+  border-left: 2px solid #159741;
+  border-left: 0.125rem solid #159741;
+  height: 10px;
+  height: 0.625rem;
+  width: 20px;
+  width: 1.25rem;
   margin-top: -2px;
   margin-top: -0.125rem;
   opacity: 0;
   -webkit-transform: translateY(-50%) rotate(-45deg);
           transform: translateY(-50%) rotate(-45deg);
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  left: -2px;
-  left: -0.125rem;
+  -webkit-transition: all 0.1s ease 0s;
+  transition: all 0.1s ease 0s;
+  left: 0px;
+  left: 0rem;
 }
 
 .form__check-box:checked + .form__check-text::after {
@@ -415,16 +474,20 @@ textarea {
 }
 
 .form__privacy {
-  pointer-events: none;
+  -webkit-transform: all 0.3s;
+          transform: all 0.3s;
   color: #159741;
   border-bottom: 1px solid #159741;
   border-bottom: 0.0625rem solid #159741;
+}
+.form__privacy:hover {
+  opacity: 0.7;
 }
 
 .form__submit-btn {
   color: #fff;
   display: block;
-  background: #ccc;
+  background: #bdbdbd;
   margin: 0 auto;
   width: 300px;
   width: 18.75rem;
@@ -436,6 +499,9 @@ textarea {
   font-size: 1.125rem;
   -webkit-transition: background-color 0.3s;
   transition: background-color 0.3s;
+}
+.form__submit-btn:hover {
+  background: rgba(21, 151, 65, .7);
 }
 
 .form__submit-btn--active {
@@ -465,12 +531,39 @@ textarea {
   font-size: 14px;
   font-size: 0.875rem;
   height: inherit;
+  position: relative;
 }
 .gnav__menu-item:not(:last-child) {
   margin-right: 20px;
   margin-right: 1.25rem;
 }
+.gnav__menu-item::after {
+  position: absolute;
+  bottom: 16px;
+  bottom: 1rem;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 2px;
+  height: 0.125rem;
+  background: #159741;
+  -webkit-transform: scale(0, 1);
+          transform: scale(0, 1);
+  -webkit-transform-origin: left top;
+          transform-origin: left top;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+.gnav__menu-item:hover::after {
+  -webkit-transform: scale(1, 1);
+          transform: scale(1, 1);
+}
 .gnav__menu-item a {
+  display: inline-block;
+  padding: 20px 0;
+  padding: 1.25rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -478,6 +571,9 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   height: inherit;
+}
+.gnav__menu-item a:hover {
+  opacity: 1;
 }
 
 /*
@@ -578,6 +674,9 @@ textarea {
   background: #f2f2f2;
   padding: 0 20px 34px;
   padding: 0 1.25rem 2.125rem;
+  max-width: 500px;
+  max-width: 31.25rem;
+  margin: 0 auto;
   position: relative;
   z-index: 20;
 }
@@ -658,6 +757,7 @@ textarea {
   height: 3.5rem;
   line-height: 56px;
   line-height: 3.5rem;
+  margin: 0 auto;
 }
 .instagram__btn:hover {
   color: #fff;
@@ -756,6 +856,36 @@ textarea {
 .sns__item:not(:last-child) {
   margin-right: 40px;
   margin-right: 2.5rem;
+}
+.sns__item:hover .sns__item--off {
+  opacity: 0;
+}
+.sns__item a {
+  display: inline-block;
+  position: relative;
+}
+.sns__item a:hover {
+  opacity: 1;
+}
+
+.sns__item--off {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  display: block;
+}
+
+.sns__item--on {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: block;
 }
 
 /*
@@ -895,6 +1025,9 @@ textarea {
   background: #f2f2f2;
   padding: 63px 15px;
   padding: 3.9375rem 0.9375rem;
+  max-width: 500px;
+  max-width: 31.25rem;
+  margin: 0 auto;
 }
 
 .contact__title {
@@ -959,6 +1092,9 @@ textarea {
   text-align: center;
   padding: 58px 0 44px;
   padding: 3.625rem 0 2.75rem;
+  max-width: 500px;
+  max-width: 31.25rem;
+  margin: 0 auto;
 }
 .menu__item:not(:last-child) {
   margin-bottom: 319px;
@@ -990,6 +1126,11 @@ textarea {
           transform: translateX(-50%);
   top: -260px;
   top: -16.25rem;
+  z-index: 30;
+}
+
+.menu__item-body {
+  position: relative;
   z-index: 30;
 }
 
@@ -1063,6 +1204,8 @@ textarea {
   padding: 30px 0 23px;
   padding: 1.875rem 0 1.4375rem;
   position: relative;
+  margin: -2px 0;
+  margin: -0.125rem 0;
 }
 
 .mv__content {
@@ -1133,6 +1276,9 @@ textarea {
 }
 
 .shop__body {
+  max-width: 500px;
+  max-width: 31.25rem;
+  margin: 0 auto;
   margin-bottom: 40px;
   margin-bottom: 2.5rem;
 }
@@ -1186,17 +1332,23 @@ textarea {
 }
 
 .shop__img {
+  max-width: 500px;
+  max-width: 31.25rem;
+  margin: 0 auto;
   margin-bottom: 98px;
   margin-bottom: 6.125rem;
 }
 
 .shop__card {
   background: #fff;
-  -webkit-box-shadow: 0px 4px 20px rgba(161, 159, 159, .6);
-          box-shadow: 0px 4px 20px rgba(161, 159, 159, .6);
+  -webkit-box-shadow: 0 0.25rem 1.25rem rgba(161, 159, 159, .6);
+          box-shadow: 0 0.25rem 1.25rem rgba(161, 159, 159, .6);
   padding: 18px 10px 113px;
   padding: 1.125rem 0.625rem 7.0625rem;
   position: relative;
+  max-width: 500px;
+  max-width: 31.25rem;
+  margin: 0 auto;
 }
 
 .shop__card-logo {

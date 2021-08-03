@@ -21,6 +21,47 @@ jQuery(function () {
     } else {
       jQuery('.drawer').removeClass('drawer--active');
     }
+  }); // スムーススクロール
+
+  jQuery('a[href^="#about"]').on('click', function () {
+    var speed = 300;
+    var id = jQuery(this).attr("href");
+    var target = jQuery("#" == id ? "html" : id);
+    var position = jQuery(target).offset().top;
+    jQuery("html, body").animate({
+      scrollTop: position
+    }, speed);
+    return false;
+  });
+  jQuery('a[href^="#menu"]').on('click', function () {
+    var speed = 300;
+    var id = jQuery(this).attr("href");
+    var target = jQuery("#" == id ? "html" : id);
+    var position = jQuery(target).offset().top;
+    jQuery("html, body").animate({
+      scrollTop: position
+    }, speed);
+    return false;
+  });
+  jQuery('a[href^="#shop"]').on('click', function () {
+    var speed = 300;
+    var id = jQuery(this).attr("href");
+    var target = jQuery("#" == id ? "html" : id);
+    var position = jQuery(target).offset().top;
+    jQuery("html, body").animate({
+      scrollTop: position
+    }, speed);
+    return false;
+  });
+  jQuery('a[href^="#contact"]').on('click', function () {
+    var speed = 300;
+    var id = jQuery(this).attr("href");
+    var target = jQuery("#" == id ? "html" : id);
+    var position = jQuery(target).offset().top;
+    jQuery("html, body").animate({
+      scrollTop: position
+    }, speed);
+    return false;
   }); // フローティングボタン
 
   jQuery('.to-top').on('click', function () {

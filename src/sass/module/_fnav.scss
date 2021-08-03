@@ -14,8 +14,37 @@
   font-family: $second-font-family;
   font-size: rem(16);
   display: block;
-  padding: rem(5) 0;
+  position: relative;
+
   &:not(:last-child) {
     margin-right: rem(32);
+  }
+
+  &::after {
+    position: absolute;
+    bottom: rem(16);
+    left: 0;
+    content: '';
+    width: 100%;
+    height: rem(2);
+    background: $accent-color;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform .3s;
+  }
+
+  &:hover {
+    &::after {
+      transform: scale(1, 1);
+    }
+  }
+
+  a {
+    display: inline-block;
+    padding: rem(20) 0;
+
+    &:hover {
+      opacity: 1;
+    }
   }
 }

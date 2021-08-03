@@ -4,6 +4,8 @@
 .instagram {
   background: $main-color;
   padding: 0 rem(20) rem(34);
+  max-width: rem(500);
+  margin: 0 auto;
   position: relative;
   z-index: 20;
   &::before {
@@ -63,6 +65,7 @@
   text-align: center;
   height: rem(56);
   line-height: rem(56);
+  margin: 0 auto;
   &:hover {
     color: #fff;
     background: $font-color;
@@ -77,6 +80,4 @@
   font-size: rem(16);
   font-weight: 700;
   background: url(../img/link-icon.svg) no-repeat right rem(20) center / rem(14);
-  // background: url('') no-repeat right rem(20) center / rem(14);
-  // background-image: url('');
 }

@@ -10,7 +10,41 @@
 .sns__item {
   width: rem(50);
   display: block;
+
   &:not(:last-child) {
     margin-right: rem(40);
   }
+
+  &:hover {
+    .sns__item--off {
+      opacity: 0;
+    }
+  }
+
+  a {
+    display: inline-block;
+    position: relative;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.sns__item--off {
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: .3s ease;
+  display: block;
+}
+
+.sns__item--on {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  display: block;
 }

@@ -21,6 +21,60 @@ jQuery(function() {
     }
   });
 
+  // スムーススクロール
+  jQuery('a[href^="#about"]').on('click', function() {
+    let speed = 300;
+    let id = jQuery(this).attr("href");
+    let target = jQuery("#" == id ? "html" : id);
+    let position = jQuery(target).offset().top;
+    jQuery("html, body").animate(
+      {
+        scrollTop: position
+      },
+        speed
+      );
+      return false;
+  });
+  jQuery('a[href^="#menu"]').on('click', function() {
+    let speed = 300;
+    let id = jQuery(this).attr("href");
+    let target = jQuery("#" == id ? "html" : id);
+    let position = jQuery(target).offset().top;
+    jQuery("html, body").animate(
+      {
+        scrollTop: position
+      },
+        speed
+      );
+      return false;
+  });
+  jQuery('a[href^="#shop"]').on('click', function() {
+    let speed = 300;
+    let id = jQuery(this).attr("href");
+    let target = jQuery("#" == id ? "html" : id);
+    let position = jQuery(target).offset().top;
+    jQuery("html, body").animate(
+      {
+        scrollTop: position
+      },
+        speed
+      );
+      return false;
+  });
+  jQuery('a[href^="#contact"]').on('click', function() {
+    let speed = 300;
+    let id = jQuery(this).attr("href");
+    let target = jQuery("#" == id ? "html" : id);
+    let position = jQuery(target).offset().top;
+    jQuery("html, body").animate(
+      {
+        scrollTop: position
+      },
+        speed
+      );
+      return false;
+  });
+
 
   // フローティングボタン
   jQuery('.to-top').on('click', function () {

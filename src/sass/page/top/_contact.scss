@@ -9,6 +9,8 @@
 .contact__content {
   background: $main-color;
   padding: rem(63) rem(15);
+  max-width: rem(500);
+  margin: 0 auto;
 }
 
 .contact__title {

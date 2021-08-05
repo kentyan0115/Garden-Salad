@@ -4,11 +4,30 @@
 .menu {
   padding: rem(24) 0;
   background: $base-color;
+  z-index: 30;
+  position: relative;
+  @include mq(md) {
+    padding: rem(72) 0; 
+  }
+}
+
+.menu__inner {
+  max-width: rem(1296);
 }
 
 .menu__content {
   border: rem(1) solid #fff;
   padding: rem(32) rem(18);
+  @include mq(md) {
+    padding: rem(80) 0 rem(100); 
+  }
+}
+
+.menu__content-inner {
+  padding: 0;
+  @include mq(md) {
+    padding: 0 rem(25);
+  }
 }
 
 .menu__subtitle {
@@ -29,28 +48,122 @@
   font-size: rem(16);
   font-weight: 500;
   margin-bottom: rem(319);
+  @include mq(md) {
+    font-size: rem(18);
+    margin-bottom: rem(105);
+  }
 } 
 
 .menu__items {
   margin-bottom: rem(48);
+  @include mq(md) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+    margin-bottom: rem(80);
+  }
 }
 
+
 .menu__item {
-  background: $main-color;
   position: relative;
+  @include mq(md) {
+    width: 48%; 
+  }
+
+  &:not(:last-child) {
+    margin-bottom: rem(319);
+    @include mq(md) {
+      margin-bottom: 0;
+    }
+  }
+
+  &:first-child {
+    @include mq(md) {
+      width: 100%;
+      margin-bottom: rem(380);
+    }
+    @include mq(xl) {
+      margin-bottom: rem(443);
+    }
+    .menu__item-img {
+      width: rem(315);
+      @include mq(md) {
+        width: rem(400);
+        top: rem(-20);
+        left: -65%;
+        right: unset;
+        transform: unset;
+      }
+      @include mq(xl) {
+        width: rem(451);
+        top: rem(-50);
+        // left: -70%;
+      }
+    }
+    .menu__item-body {
+      padding-top: 0;
+      @include mq(md) {
+        width: rem(500);
+        margin-right: rem(50);
+      }
+      @include mq(xl) {
+        margin-right: rem(68);
+        width: rem(565);
+      }
+    }
+  }
+
+  &:nth-child(2) {
+    .menu__item-img {
+      width: rem(305);
+      @include mq(md) {
+        width: rem(350);
+      }
+      @include mq(xl) {
+        width: rem(417);
+      }
+    }
+  }
+  
+  &:last-child {
+    .menu__item-img {
+      width: rem(307);
+      @include mq(md) {
+        width: rem(350);
+      }
+      @include mq(xl) {
+        width: rem(427);
+      }
+    }
+  }
+}
+
+.menu__item-img {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: rem(-260);
+  z-index: 40;
+  @include mq(md) {
+    top: rem(-300);
+  }
+  @include mq(xl) {
+    top: rem(-370); 
+  }
+}
+
+.menu__item-body {
+  position: relative;
+  background: $main-color;
   text-align: center;
   padding: rem(58) 0 rem(44);
   max-width: rem(500);
   margin: 0 auto;
-
-  &:not(:last-child) {
-    margin-bottom: rem(319);
+  z-index: 25;
+  @include mq(md) {
+    max-width: unset; 
   }
-
-  &:first-child {
-    padding: 0 0 rem(42);
-  }
-
   &::after {
     position: absolute;
     content: "";
@@ -60,49 +173,62 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    @include mq(md) {
+      width: calc(100% - 26px);
+      height: calc(100% - 26px);
+    }
   }
-}
 
-.menu__item-img {
-  position: absolute;
-  width: rem(305);
-  left: 50%;
-  transform: translateX(-50%);
-  top: rem(-260);
-  z-index: 30;
-}
-
-.menu__item-body {
-  position: relative;
-  z-index: 30;
 }
 
 .menu__item-title {
   font-weight: 700;
   font-size: rem(24);
   margin-bottom: rem(15);
+  position: relative;
+  z-index: 30;
+  @include mq(md) {
+    font-size: rem(30); 
+  }
 }
 
 .menu__item-price {
   font-family: $second-font-family;
   font-size: rem(30);
   margin-bottom: rem(15);
+  letter-spacing: 0.1em;
+  position: relative;
+  z-index: 30;
+  @include mq(md) {
+    font-size: rem(40); 
+  }
 }
 
 .menu__item-price-mark {
   font-size: rem(18);
   margin-right: rem(3);
+  @include mq(md) {
+    font-size: rem(24);
+    margin-right: rem(6); 
+  }
 } 
 
 .menu__item-price-tax {
   font-family: $base-font-family;
   font-weight: 500;
   font-size: rem(12);
-  letter-spacing: 0.1em;
+  @include mq(md) {
+    font-size: rem(18); 
+  }
 }
 
 .menu__item-pfc {
   font-size: rem(14);
+  position: relative;
+  z-index: 30;
+  @include mq(md) {
+    font-size: rem(24); 
+  }
 }
 
 .menu__item-recommend {
@@ -114,16 +240,26 @@
   width: rem(211);
   position: relative;
   z-index: 25;
+  @include mq(md) {
+    padding: rem(9) 0; 
+    width: rem(251);
+  }
 }
 
 .menu__item-recommend-title {
   font-size: rem(18);
   font-weight: 500;
+  @include mq(md) {
+    font-size: rem(24); 
+  }
 }
 
 .menu__item-recommend-subtitle {
   font-family: $third-font-family;
   font-size: rem(12);
+  @include mq(md) {
+    font-size: rem(14); 
+  }
 }
 
 

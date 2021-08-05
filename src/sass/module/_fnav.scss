@@ -2,7 +2,10 @@
   fnav 
 */
 .fnav {
-  margin-bottom: rem(35);
+  margin-bottom: rem(23); 
+  @include mq(md) {
+    
+  }
 }
 
 .fnav__menu {
@@ -15,9 +18,15 @@
   font-size: rem(16);
   display: block;
   position: relative;
+  @include mq(md) {
+    font-size: rem(18); 
+  }
 
   &:not(:last-child) {
     margin-right: rem(32);
+    @include mq(md) {
+      margin-right: rem(40);
+    }
   }
 
   &::after {

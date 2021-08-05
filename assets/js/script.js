@@ -65,7 +65,7 @@ jQuery(function () {
   }); // フローティングボタン
 
   jQuery('.to-top').on('click', function () {
-    jQuery('body, html').animate({
+    jQuery('body, html').animate.stop(true, false)({
       scrollTop: 0
     }, 500);
     return false;
@@ -87,5 +87,20 @@ jQuery(function () {
       jQuery('.js-submit').removeClass('form__submit-btn--active');
       jQuery('.js-submit').prop('disabled', true);
     }
+  }); //  パララックス
+
+  jQuery(function () {
+    var target1 = jQuery(".image");
+    var targetPosOT1 = target1.offset().top;
+    var targetFactor = 0.2;
+    var windowH = jQuery(window).height();
+    var scrollYStart1 = targetPosOT1 - windowH;
+    jQuery(window).on('scroll', function () {
+      var scrollY = jQuery(this).scrollTop();
+
+      if (scrollY > scrollYStart1) {
+        target1.css('background-position-y', (scrollY - targetPosOT1) * targetFactor + 'px');
+      }
+    });
   });
 });

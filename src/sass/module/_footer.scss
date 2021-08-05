@@ -4,12 +4,18 @@
 .footer {
   background: $main-color;
   padding: rem(48) 0 rem(9);
+  @include mq(md) {
+    padding-top: rem(56); 
+  }
 }
 
 .footer__logo {
   width: rem(165);
   margin: 0 auto;
   margin-bottom: rem(30);
+  @include mq(md) {
+    margin-bottom: rem(22); 
+  }
 }
 
 .footer__copyright {

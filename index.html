@@ -60,8 +60,8 @@
             <span>「おいしいから食べたい」サラダ</span>
           </p>
         </div><!-- /.mv__content -->
-        <div class="mv__img"></div>
       </div><!-- /.mv__inner -->
+      <div class="mv__img"></div>
     </div><!-- /.mv -->
 
     <section class="concept">
@@ -106,7 +106,7 @@
           </div><!-- /.about__item -->
           <div class="about__item">
             <div class="about__item-body">
-              <h3 class="about__item-title"><span>ジムトレーナー監修</span>の<br>
+              <h3 class="about__item-title"><span>ジムトレーナー監修</span>の<br class="u-sp">
                 メニュー</h3>
               <p class="about__item-text">コンビニのサラダチキンに飽きたらこれ！一食でタンパク質20gがとれるトレーニング向けのメニューもご用意してます。</p>
             </div>
@@ -119,83 +119,91 @@
       </div><!-- /.l-inner -->
     </section><!-- /.about -->
 
-    <div class="image image1">
-      <picture>
-        <source media="(min-width: 768px)" srcset="./assets/img/image-1.jpg">
-        <img src="./assets/img/image-1-sp.jpg" alt="サラダの画像" loading="lazy">
-      </picture>
-    </div><!-- /.image1 -->
+    <div class="image-wrapper">
+      <div class="image image1">
+        <!-- <picture>
+            <source media="(min-width: 768px)" srcset="./assets/img/image-1.jpg">
+            <img src="./assets/img/image-1-sp.jpg" alt="サラダの画像" loading="lazy">
+          </picture> -->
+      </div><!-- /.image1 -->
+    </div>
+    </div>
+
 
     <section class="menu" id="menu">
-      <div class="l-inner">
+      <div class="l-inner menu__inner">
         <div class="menu__content">
           <p class="section-subtitle menu__subtitle">メニュー</p>
           <h2 class="section-title menu__title">Menu</h2>
           <p class="menu__pfc">P : タンパク質　F : 脂質　C : 糖質</p>
-          <div class="menu__items">
-            <div class="menu__item">
-              <div class="menu__item-img">
-                <img src="./assets/img/menu-1.png" alt="カッテージチーズとバジルのサラダ" loading="lazy">
-              </div>
-              <div class="menu__item-body">
-                <div class="menu__item-recommend">
-                  <p class="menu__item-recommend-subtitle">Recommendation</p>
-                  <p class="menu__item-recommend-title">店長おすすめ</p>
+          <div class="l-inner menu__content-inner">
+            <div class="menu__items">
+              <div class="menu__item">
+                <div class="menu__item-body">
+                  <div class="menu__item-img">
+                    <img src="./assets/img/menu-1.png" alt="カッテージチーズとバジルのサラダ" loading="lazy">
+                  </div>
+                  <div class="menu__item-recommend">
+                    <p class="menu__item-recommend-subtitle">Recommendation</p>
+                    <p class="menu__item-recommend-title">店長おすすめ</p>
+                  </div>
+                  <p class="menu__item-title">カッテージチーズと<br>
+                    バジルのサラダ</p>
+                  <p class="menu__item-price"><span class="menu__item-price-mark">¥</span>1,100<span
+                      class="menu__item-price-tax">（税込）</span></p>
+                  <p class="menu__item-pfc">305kcal P : 16.2g F : 12.5g C : 13.3g</p>
                 </div>
-                <p class="menu__item-title">カッテージチーズと<br>
-                  バジルのサラダ</p>
-                <p class="menu__item-price"><span class="menu__item-price-mark">¥</span>1,100<span
-                    class="menu__item-price-tax">（税込）</span></p>
-                <p class="menu__item-pfc">305kcal P : 16.2g F : 12.5g C : 13.3g</p>
-              </div>
-            </div><!-- /.menu__item -->
-            <div class="menu__item">
-              <div class="menu__item-img">
-                <img src="./assets/img/menu-2.png" alt="アボガドサラダ" loading="lazy">
-              </div>
-              <div class="menu__item-body">
-                <p class="menu__item-title">アボガドサラダ</p>
-                <p class="menu__item-price"><span class="menu__item-price-mark">¥</span>980<span
-                    class="menu__item-price-tax">（税込）</span></p>
-                <p class="menu__item-pfc">425kcal P : 12.2g F : 15.3g C : 16.8g</p>
-              </div>
-            </div><!-- /.menu__item -->
-            <div class="menu__item">
-              <div class="menu__item-img">
-                <img src="./assets/img/menu-3.png" alt="チキンサラダ" loading="lazy">
-              </div>
-              <div class="menu__item-body">
-                <p class="menu__item-title">チキンサラダ</p>
-                <p class="menu__item-price"><span class="menu__item-price-mark">¥</span>980<span
-                    class="menu__item-price-tax">（税込）</span></p>
-                <p class="menu__item-pfc">425kcal P : 12.2g F : 15.3g C : 16.8g</p>
-              </div>
-            </div><!-- /.menu__item -->
-          </div><!-- /.menu__items -->
-          <div class="menu__instagram instagram">
-            <p class="instagram__title">Instagram</p>
-            <p class="instagram__text">Instagramにはさらに詳しいメニュー内容などを載せています</p>
-            <div class="instagram__items">
-              <div class="instagram__item">
-                <img src="./assets/img/instagram-1.jpg" alt="インスタグラムの投稿画像" loading="lazy">
-              </div>
-              <div class="instagram__item">
-                <img src="./assets/img/instagram-2.jpg" alt="インスタグラムの投稿画像" loading="lazy">
-              </div>
-              <div class="instagram__item">
-                <img src="./assets/img/instagram-3.jpg" alt="インスタグラムの投稿画像" loading="lazy">
-              </div>
-              <div class="instagram__item">
-                <img src="./assets/img/instagram-4.jpg" alt="インスタグラムの投稿画像" loading="lazy">
-              </div>
-            </div><!-- /.instagram__items -->
-            <p class="instagram__id">ID：tf_gardensalad</p>
-            <a href="#" class="instagram__btn" target="_blank">
-              <p class="instagram__btn-text">もっとメニューを見る</p>
-            </a>
+              </div><!-- /.menu__item -->
+              <div class="menu__item">
+                <div class="menu__item-body">
+                  <div class="menu__item-img">
+                    <img src="./assets/img/menu-2.png" alt="アボガドサラダ" loading="lazy">
+                  </div>
+                  <p class="menu__item-title">アボガドサラダ</p>
+                  <p class="menu__item-price"><span class="menu__item-price-mark">¥</span>980<span
+                      class="menu__item-price-tax">（税込）</span></p>
+                  <p class="menu__item-pfc">425kcal P : 12.2g F : 15.3g C : 16.8g</p>
+                </div>
+              </div><!-- /.menu__item -->
+              <div class="menu__item">
+                <div class="menu__item-body">
+                  <div class="menu__item-img">
+                    <img src="./assets/img/menu-3.png" alt="チキンサラダ" loading="lazy">
+                  </div>
+                  <p class="menu__item-title">チキンサラダ</p>
+                  <p class="menu__item-price"><span class="menu__item-price-mark">¥</span>980<span
+                      class="menu__item-price-tax">（税込）</span></p>
+                  <p class="menu__item-pfc">425kcal P : 12.2g F : 15.3g C : 16.8g</p>
+                </div>
+              </div><!-- /.menu__item -->
+            </div><!-- /.menu__items -->
+          </div><!-- /.l-inner -->
+          <div class="l-inner instagram-inner">
+            <div class="menu__instagram instagram">
+              <p class="instagram__title">Instagram</p>
+              <p class="instagram__text">Instagramにはさらに詳しいメニュー内容などを載せています</p>
+              <div class="instagram__items">
+                <div class="instagram__item">
+                  <img src="./assets/img/instagram-1.jpg" alt="インスタグラムの投稿画像" loading="lazy">
+                </div>
+                <div class="instagram__item">
+                  <img src="./assets/img/instagram-2.jpg" alt="インスタグラムの投稿画像" loading="lazy">
+                </div>
+                <div class="instagram__item">
+                  <img src="./assets/img/instagram-3.jpg" alt="インスタグラムの投稿画像" loading="lazy">
+                </div>
+                <div class="instagram__item">
+                  <img src="./assets/img/instagram-4.jpg" alt="インスタグラムの投稿画像" loading="lazy">
+                </div>
+              </div><!-- /.instagram__items -->
+              <p class="instagram__id">ID：tf_gardensalad</p>
+              <a href="#" class="instagram__btn" target="_blank">
+                <p class="instagram__btn-text">もっとメニューを見る</p>
+              </a>
+            </div><!-- /.l-inner -->
           </div><!-- /.instagram -->
-        </div><!-- /.l-inner -->
-      </div><!-- /.menu__content -->
+        </div><!-- /.menu__content -->
+      </div><!-- /.l-inner -->
     </section><!-- /.menu -->
 
     <div class="image image2">
@@ -210,10 +218,10 @@
       <h2 class="section-title shop__title">Shop</h2>
       <picture class="shop__map">
         <source media="(min-width: 768px)" srcset="./assets/img/map.png">
-        <img src="./assets/img/map-sp.png" alt="Google map">
+        <img src="./assets/img/map-sp.png" alt="Google map" loading="lazy">
       </picture>
-      <div class="shop__content">
-        <div class="l-inner">
+      <div class="l-inner">
+        <div class="shop__content">
           <div class="shop__body">
             <p class="shop__name"><span class="shop__subname">TF</span>Garden Salad<br class="u-sp"><span
                 class="shop__janame">（ ガーデンサラダ ）</span></p>
@@ -300,9 +308,8 @@
               </div><!-- /.form__detail -->
             </dl><!-- /.form__content -->
             <div class="form__check">
-              <label class="js-check"><input class="form__check-box js-checkbox" name="プライバシーポリシーに同意する。"
-                  type="checkbox"><span class="form__check-text"><a href="#"
-                    class="form__privacy">プライバシーポリシー</a>に同意する。</span></label>
+              <label class="js-check"><input class="form__check-box js-checkbox" type="checkbox"><span
+                  class="form__check-text"><a href="#" class="form__privacy">プライバシーポリシー</a>に同意する。</span></label>
             </div><!-- /.form__check -->
             <div class="form__submit">
               <button class="form__submit-btn js-submit" disabled>送信</button>
@@ -320,20 +327,20 @@
       <ul class="footer__sns sns">
         <li class="sns__item sns__twitter">
           <a href="#" target="_blank">
-            <img class="sns__item--off" src="./assets/img/twitter-icon1.svg" alt="Twitter" loading="lazy">
-            <img class="sns__item--on" src="./assets/img/twitter-icon2.svg" alt="Twitter" loading="lazy">
+            <img class="sns__item--off" src="./assets/img/twitter-icon1.png" alt="Twitter" loading="lazy">
+            <img class="sns__item--on" src="./assets/img/twitter-icon2.png" alt="Twitter" loading="lazy">
           </a>
         </li>
         <li class="sns__item sns__instagram">
           <a href="#" target="_blank">
-            <img class="sns__item--off" src="./assets/img/instagram-icon1.svg" alt="Instagram" loading="lazy">
-            <img class="sns__item--on" src="./assets/img/instagram-icon2.svg" alt="Instagram" loading="lazy">
+            <img class="sns__item--off" src="./assets/img/instagram-icon1.png" alt="Instagram" loading="lazy">
+            <img class="sns__item--on" src="./assets/img/instagram-icon2.png" alt="Instagram" loading="lazy">
           </a>
         </li>
         <li class="sns__item sns__tiktok">
           <a href="#" target="_blank">
-            <img class="sns__item--off" src="./assets/img/tiktok-icon1.svg" alt="Tiktok" loading="lazy">
-            <img class="sns__item--on" src="./assets/img/tiktok-icon2.svg" alt="Tiktok" loading="lazy">
+            <img class="sns__item--off" src="./assets/img/tiktok-icon1.png" alt="Tiktok" loading="lazy">
+            <img class="sns__item--on" src="./assets/img/tiktok-icon2.png" alt="Tiktok" loading="lazy">
           </a>
         </li>
       </ul><!-- /.sns -->

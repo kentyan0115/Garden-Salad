@@ -7,6 +7,10 @@
   right: rem(20);
   bottom: rem(305);
   z-index: 100;
+  @include mq(md) {
+    width: rem(120); 
+    bottom: rem(272);
+  }
   &:hover {
     opacity: 1;
   }

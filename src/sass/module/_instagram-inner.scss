@@ -1,0 +1,11 @@
+/*
+  instagram-inner
+*/
+.instagram-inner {
+  &.l-inner {
+    padding: 0;
+    @include mq(md) {
+      padding: 0 rem(25);
+    }
+  }
+}

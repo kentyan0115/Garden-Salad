@@ -7,19 +7,33 @@
   background: $base-color;
   padding: rem(48) rem(10) rem(64);
   position: relative;
+  overflow: hidden;
+  @include mq(md) {
+    padding: rem(120) 0 rem(110); 
+  }
 }
 
 .concept__title {
   font-size: rem(20);
   font-weight: 700;
   margin-bottom: rem(24);
+  @include mq(md) {
+    font-size: rem(30); 
+    margin-bottom: rem(48);
+  }
 }
 
 .concept__text {
   font-size: rem(16);
+  @include mq(md) {
+    font-size: rem(18); 
+  }
 
   &:not(:last-child) {
     margin-bottom: rem(15);
+    @include mq(md) {
+      margin-bottom: rem(20);
+    }
   }
 }
 
@@ -32,4 +46,13 @@
   bottom: 0;
   right: 0;
   text-align: right;
+  @include mq(md) {
+    font-size: rem(180);
+    white-space: nowrap; 
+    right: unset;
+    left: -4%;
+  }
+  @include mq(xl) {
+    font-size: rem(280);
+  }
 }

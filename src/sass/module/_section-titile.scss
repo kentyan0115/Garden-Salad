@@ -8,6 +8,10 @@
   text-align: center;
   padding-bottom: rem(12);
   position: relative;
+  @include mq(md) {
+    font-size: rem(48); 
+    padding-bottom: rem(16);
+  }
   &::after {
     position: absolute;
     content: "";

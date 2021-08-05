@@ -4,12 +4,15 @@
 .sns {
   display: flex;
   justify-content: center;
-  margin-bottom: rem(35);
+  margin-bottom: rem(20); 
 }
 
 .sns__item {
   width: rem(50);
   display: block;
+  @include mq(md) {
+    width: rem(40); 
+  }
 
   &:not(:last-child) {
     margin-right: rem(40);

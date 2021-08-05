@@ -17,8 +17,14 @@
   font-size: rem(14);
   height: inherit;
   position: relative;
+  @include mq(md) {
+    font-size: rem(18); 
+  }
   &:not(:last-child) {
     margin-right: rem(20);
+    @include mq(md) {
+      margin-right: rem(40);
+    }
   }
 
   &::after {
@@ -32,6 +38,9 @@
     transform: scale(0, 1);
     transform-origin: left top;
     transition: transform .3s;
+    @include mq(md) {
+      bottom: rem(25);
+    }
   }
   &:hover {
     &::after {

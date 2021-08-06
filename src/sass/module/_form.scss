@@ -11,13 +11,13 @@
 
 .form__item {
   &:not(:last-child) {
-    margin-bottom: rem(32);
+    margin-bottom: rem(34);
   }
 }
 
 .form__item-text {
   font-size: rem(16);
-  margin-bottom: rem(6);
+  margin-bottom: rem(8);
   line-height: rem(16);
   @include mq(md) {
     font-size: rem(18); 
@@ -30,7 +30,7 @@
     background: $accent-color;
     font-size: rem(12);
     border-radius: rem(6);
-    padding: rem(1) rem(8);
+    padding: rem(2) rem(8);
     margin-left: rem(10);
     display: inline-block;
     @include mq(md) {
@@ -148,7 +148,8 @@ textarea {
 }
 
 .form__privacy {
-  // pointer-events: none;
+  line-height: 1.3;
+  letter-spacing: 0.05em;
   transform: all 0.3s;
   color: $accent-color;
   border-bottom: rem(1) solid $accent-color;

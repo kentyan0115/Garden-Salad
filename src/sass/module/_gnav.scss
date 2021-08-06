@@ -17,6 +17,7 @@
   font-size: rem(14);
   height: inherit;
   position: relative;
+  letter-spacing: 0.03em;
   @include mq(md) {
     font-size: rem(18); 
   }

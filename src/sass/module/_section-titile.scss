@@ -5,8 +5,9 @@
   font-family: $second-font-family;
   font-size: rem(32);
   line-height: 1.2;
+  letter-spacing: 0.05em;
   text-align: center;
-  padding-bottom: rem(12);
+  padding-bottom: rem(14);
   position: relative;
   @include mq(md) {
     font-size: rem(48); 

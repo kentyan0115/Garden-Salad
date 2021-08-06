@@ -4,7 +4,7 @@
 .to-top {
   position: fixed;
   width: rem(70);
-  right: rem(20);
+  right: rem(16);
   bottom: rem(305);
   z-index: 100;
   @include mq(md) {

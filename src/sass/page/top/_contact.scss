@@ -30,7 +30,8 @@
 
 .contact__text {
   font-size: rem(16);
-  margin-bottom: rem(30);
+  margin-bottom: rem(35);
+  letter-spacing: 0.03em;
   @include mq(md) {
     text-align: center; 
     margin-bottom: rem(52);

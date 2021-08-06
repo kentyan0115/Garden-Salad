@@ -127,7 +127,6 @@
           </picture> -->
       </div><!-- /.image1 -->
     </div>
-    </div>
 
 
     <section class="menu" id="menu">
@@ -181,7 +180,7 @@
           <div class="l-inner instagram-inner">
             <div class="menu__instagram instagram">
               <p class="instagram__title">Instagram</p>
-              <p class="instagram__text">Instagramにはさらに詳しいメニュー内容などを載せています</p>
+              <p class="instagram__text">Instagramにはさらに詳しいメニュー内容などを載せています！</p>
               <div class="instagram__items">
                 <div class="instagram__item">
                   <img src="./assets/img/instagram-1.jpg" alt="インスタグラムの投稿画像" loading="lazy">
@@ -206,12 +205,14 @@
       </div><!-- /.l-inner -->
     </section><!-- /.menu -->
 
-    <div class="image image2">
-      <picture>
-        <source media="(min-width: 768px)" srcset="./assets/img/image-2.jpg">
-        <img src="./assets/img/image-2-sp.jpg" alt="店内イメージ" loading="lazy">
-      </picture>
-    </div><!-- /.image2 -->
+    <div class="image-wrapper">
+      <div class="image image2">
+        <picture>
+          <source media="(min-width: 768px)" srcset="./assets/img/image-2.jpg">
+          <img src="./assets/img/image-2-sp.jpg" alt="店内イメージ" loading="lazy">
+        </picture>
+      </div><!-- /.image2 -->
+    </div>
 
     <section class="shop" id="shop">
       <p class="section-subtitle shop__subtitle">店舗情報</p>
@@ -243,9 +244,10 @@
               </div>
             </dl>
           </div><!-- /.shop__body -->
-          <div class="shop__img">
-            <img src="./assets/img/shop-1.jpg" alt="店舗外観" loading="lazy">
-          </div>
+          <picture class="shop__img">
+            <source media="(min-width: 768px)" srcset="./assets/img/shop-1.jpg">
+            <img src="./assets/img/shop-1-sp.jpg" alt="店舗外観" loading="lazy">
+          </picture>
         </div><!-- /.l-inner -->
       </div><!-- /.shop__content -->
       <div class="l-inner">
@@ -360,7 +362,10 @@
   </footer><!-- /.footer -->
 
   <a href="#" class="to-top">
-    <img src="./assets/img/pagetop.svg" alt="Page top" loading="lazy">
+    <picture>
+      <source media="(min-width: 768px)" srcset="./assets/img/pagetop.svg">
+      <img src="./assets/img/pagetop-sp.svg" alt="Page top" loading="lazy">
+    </picture>
   </a>
 
 </body>

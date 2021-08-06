@@ -36,12 +36,13 @@
   font-family: $second-font-family;
   background: $accent-color;
   position: relative;
-  padding: rem(10) 0;
+  padding: rem(7) 0;
+  letter-spacing: 0.03em;
   font-size: rem(24);
   text-align: center;
   width: rem(185);
   margin: 0 auto;
-  margin-bottom: rem(35);
+  margin-bottom: rem(20);
   z-index: 30;
   @include mq(md) {
     width: rem(360); 
@@ -53,6 +54,8 @@
 
 .instagram__text {
   font-size: rem(16);
+  padding: 0 rem(8);
+  letter-spacing: 0.1em;
   margin-bottom: rem(24);
   @include mq(md) {
     position: relative;
@@ -128,6 +131,8 @@
   text-align: center;
   height: rem(56);
   line-height: rem(54);
+  padding-right: rem(10);
+  letter-spacing: 0.03em;
   @include mq(md) {
     width: rem(300); 
   }
@@ -137,7 +142,7 @@
     background: $font-color;
     transition: all .3s;
     .instagram__btn-text {
-      background: url(../img/link-icon-2.svg) no-repeat right rem(20) center / rem(14);
+      background: url(../img/link-icon-2.svg) no-repeat right rem(10) center / rem(14);
       @include mq(md) {
         background: url(../img/link-icon-2.svg) no-repeat right rem(30) center / rem(16);
       }
@@ -148,7 +153,7 @@
 .instagram__btn-text {
   font-size: rem(16);
   font-weight: 700;
-  background: url(../img/link-icon.svg) no-repeat right rem(20) center / rem(14);
+  background: url(../img/link-icon.svg) no-repeat right rem(10) center / rem(14);
   @include mq(md) {
     background: url(../img/link-icon.svg) no-repeat right rem(30) center / rem(16);
   }

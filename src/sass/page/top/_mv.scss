@@ -4,7 +4,7 @@
 .mv {
   background: $base-color;
   height: rem(243);
-  padding-top: rem(30);
+  padding-top: rem(32);
   position: relative;
   margin: rem(-2) 0;
   @include mq(md) {
@@ -22,7 +22,7 @@
 .mv__title {
   font-family: $second-font-family;
   font-size: rem(36);
-  line-height: 1.1;
+  line-height: 1.08;
   margin-bottom: rem(15);
   @include mq(md) {
     font-size: rem(100);
@@ -39,6 +39,7 @@
   font-size: rem(14);
   font-weight: 500;
   margin-left: rem(10);
+  letter-spacing: 0.04em;
   @include mq(md) {
     font-size: rem(32); 
     font-weight: 700;
@@ -50,7 +51,7 @@
     margin-top: rem(10);
     margin-left: rem(-10);
     background: $accent-color;
-    padding: rem(4);
+    padding: rem(5) 0;
     padding-right: rem(10);
     @include mq(md) {
       padding: rem(7);
@@ -63,7 +64,7 @@
 .mv__img {
   background: url(../img/mv.jpg) no-repeat center center / cover;
   height: inherit;
-  width: 80%;
+  width: 82%;
   position: absolute;
   right: 0;
   top: 0;

@@ -2,10 +2,7 @@
   fnav 
 */
 .fnav {
-  margin-bottom: rem(23); 
-  @include mq(md) {
-    
-  }
+  margin-bottom: rem(13); 
 }
 
 .fnav__menu {
@@ -16,6 +13,7 @@
 .fnav__menu-item {
   font-family: $second-font-family;
   font-size: rem(16);
+  letter-spacing: 0.03em;
   display: block;
   position: relative;
   @include mq(md) {

@@ -3,4 +3,7 @@
 */
 .image-wrapper {
   height: rem(250);
+  @include mq(md) {
+    height: rem(450);
+  }
 }

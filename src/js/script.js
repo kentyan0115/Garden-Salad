@@ -74,7 +74,7 @@ jQuery(function () {
 
   // フローティングボタン
   jQuery('.to-top').on('click', function () {
-    jQuery('body, html').animate.stop(true, false) ({
+    jQuery('body, html').animate({
       scrollTop: 0
     }, 500);
     return false;

@@ -11,7 +11,7 @@
   position: relative;
   @include mq(md) {
     font-size: rem(48); 
-    padding-bottom: rem(16);
+    padding-bottom: rem(20);
   }
   &::after {
     position: absolute;

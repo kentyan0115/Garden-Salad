@@ -9,7 +9,7 @@
   position: relative;
   overflow: hidden;
   @include mq(md) {
-    padding: rem(120) 0 rem(110); 
+    padding: rem(125) 0 rem(110); 
   }
 }
 
@@ -22,6 +22,7 @@
   @include mq(md) {
     font-size: rem(30); 
     margin-bottom: rem(48);
+    padding-left: 0;
   }
 }
 
@@ -30,12 +31,13 @@
   padding: 0 rem(10);
   @include mq(md) {
     font-size: rem(18); 
+    padding: 0;
   }
 
   &:not(:last-child) {
     margin-bottom: rem(23);
     @include mq(md) {
-      margin-bottom: rem(20);
+      margin-bottom: rem(25);
     }
   }
 }

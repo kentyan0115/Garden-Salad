@@ -355,10 +355,20 @@ select::-ms-expand {
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
 }
+@media screen and (min-width: 768px) {
+  .form__content {
+    margin-bottom: 1.75rem;
+  }
+}
 
 .form__item:not(:last-child) {
   margin-bottom: 34px;
   margin-bottom: 2.125rem;
+}
+@media screen and (min-width: 768px) {
+  .form__item:not(:last-child) {
+    margin-bottom: 2.25rem;
+  }
 }
 
 .form__item-text {
@@ -451,6 +461,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .form__check {
     margin-bottom: 2.6875rem;
+    padding-left: 1.5625rem;
   }
 }
 
@@ -775,6 +786,11 @@ textarea {
   height: 250px;
   height: 15.625rem;
 }
+@media screen and (min-width: 768px) {
+  .image-wrapper {
+    height: 28.125rem;
+  }
+}
 
 /*
   image
@@ -866,7 +882,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .instagram__title {
     width: 22.5rem;
-    padding: 1.0625rem 0;
+    padding: 0.9375rem 0;
     font-size: 1.875rem;
     margin-bottom: 1.75rem;
   }
@@ -886,6 +902,8 @@ textarea {
     position: relative;
     margin-bottom: 2.125rem;
     display: inline-block;
+    font-size: 1.0625rem;
+    padding: 0;
   }
   .instagram__text::before, .instagram__text::after {
     position: absolute;
@@ -974,6 +992,7 @@ textarea {
   display: block;
   width: 260px;
   width: 16.25rem;
+  max-width: 100%;
   text-align: center;
   height: 56px;
   height: 3.5rem;
@@ -987,6 +1006,8 @@ textarea {
 @media screen and (min-width: 768px) {
   .instagram__btn {
     width: 18.75rem;
+    padding-right: 0;
+    padding-left: 0;
   }
 }
 .instagram__btn:hover {
@@ -1050,7 +1071,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .section-subtitle {
     font-size: 1.125rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -1071,7 +1092,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .section-title {
     font-size: 3rem;
-    padding-bottom: 1rem;
+    padding-bottom: 1.25rem;
   }
 }
 .section-title::after {
@@ -1159,11 +1180,13 @@ textarea {
   bottom: 305px;
   bottom: 19.0625rem;
   z-index: 100;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .to-top {
     width: 7.5rem;
     bottom: 17rem;
+    right: 4%;
   }
 }
 .to-top:hover {
@@ -1180,7 +1203,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .about {
-    padding: 8.75rem 0 9.375rem;
+    padding: 8.4375rem 0 9.375rem;
   }
 }
 
@@ -1231,13 +1254,26 @@ textarea {
         -ms-flex-pack: end;
             justify-content: flex-end;
   }
-  .about__item:nth-child(odd) .about__item-img {
-    margin-right: 4.1875rem;
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .about__item:nth-child(odd) .about__item-body {
+    padding-top: 0.9375rem;
+    padding-left: 0.625rem;
+    padding-bottom: 0;
   }
+}
+@media screen and (min-width: 768px) {
+  .about__item:nth-child(odd) .about__item-img {
+    margin-right: 3.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
   .about__item:nth-child(odd) .about__item-number {
-    right: 0;
+    right: -0.625rem;
     left: unset;
   }
+}
+@media screen and (min-width: 768px) {
   .about__item:nth-child(odd) .about__item-text {
     margin-bottom: 0;
   }
@@ -1249,8 +1285,10 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .about__item-body {
-    width: 25rem;
+    width: 26.25rem;
     max-width: 50%;
+    padding-left: 0;
+    padding-bottom: 0.625rem;
   }
 }
 
@@ -1268,7 +1306,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .about__item-title {
     font-size: 1.875rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.25rem;
   }
 }
 .about__item-title span {
@@ -1306,8 +1344,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .about__item-number {
-    right: unset;
-    right: 50%;
+    right: 48%;
     font-size: 18rem;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -1344,7 +1381,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .concept {
-    padding: 7.5rem 0 6.875rem;
+    padding: 7.8125rem 0 6.875rem;
   }
 }
 
@@ -1362,6 +1399,7 @@ textarea {
   .concept__title {
     font-size: 1.875rem;
     margin-bottom: 3rem;
+    padding-left: 0;
   }
 }
 
@@ -1374,6 +1412,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .concept__text {
     font-size: 1.125rem;
+    padding: 0;
   }
 }
 .concept__text:not(:last-child) {
@@ -1382,7 +1421,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .concept__text:not(:last-child) {
-    margin-bottom: 1.25rem;
+    margin-bottom: 1.5625rem;
   }
 }
 
@@ -1421,10 +1460,15 @@ textarea {
   padding: 64px 0;
   padding: 4rem 0;
 }
+@media screen and (min-width: 768px) {
+  .contact {
+    padding: 8.125rem 0;
+  }
+}
 
 .contact__inner {
-  max-width: 800px;
-  max-width: 50rem;
+  max-width: 850px;
+  max-width: 53.125rem;
 }
 
 .contact__content {
@@ -1448,7 +1492,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .contact__title {
-    margin-bottom: 2rem;
+    margin-bottom: 1.75rem;
   }
 }
 
@@ -1483,8 +1527,8 @@ textarea {
 }
 
 .menu__inner {
-  max-width: 1296px;
-  max-width: 81rem;
+  max-width: 1345px;
+  max-width: 84.0625rem;
 }
 
 .menu__content {
@@ -1517,6 +1561,11 @@ textarea {
   margin-bottom: 48px;
   margin-bottom: 3rem;
 }
+@media screen and (min-width: 768px) {
+  .menu__title {
+    margin-bottom: 2.1875rem;
+  }
+}
 .menu__title::after {
   background: #fff;
 }
@@ -1533,7 +1582,6 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .menu__pfc {
-    font-size: 1.125rem;
     margin-bottom: 6.5625rem;
   }
 }
@@ -1561,7 +1609,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .menu__item {
-    width: 48%;
+    width: 48.2%;
   }
 }
 .menu__item:first-child {
@@ -1571,7 +1619,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .menu__item:first-child {
     width: 100%;
-    margin-bottom: 23.75rem;
+    margin-bottom: 21.875rem;
   }
 }
 @media screen and (min-width: 1100px) {
@@ -1597,6 +1645,7 @@ textarea {
 }
 @media screen and (min-width: 1100px) {
   .menu__item:first-child .menu__item-img {
+    left: -61%;
     width: 28.1875rem;
     top: -3.125rem;
   }
@@ -1613,12 +1662,22 @@ textarea {
 @media screen and (min-width: 1100px) {
   .menu__item:first-child .menu__item-body {
     margin-right: 4.25rem;
-    width: 35.3125rem;
+    width: 36.875rem;
   }
 }
 .menu__item:nth-child(2) {
   margin-bottom: 303px;
   margin-bottom: 18.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .menu__item:nth-child(2) {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 768px) {
+  .menu__item:nth-child(2) .menu__item-body {
+    padding: 4.6875rem 0 2.6875rem;
+  }
 }
 .menu__item:nth-child(2) .menu__item-img {
   width: 305px;
@@ -1629,11 +1688,14 @@ textarea {
 @media screen and (min-width: 768px) {
   .menu__item:nth-child(2) .menu__item-img {
     width: 21.875rem;
+    top: -18.75rem;
   }
 }
 @media screen and (min-width: 1100px) {
   .menu__item:nth-child(2) .menu__item-img {
     width: 26.0625rem;
+    top: -21.5625rem;
+    left: 50%;
   }
 }
 .menu__item:nth-child(2) .menu__item-price {
@@ -1643,6 +1705,11 @@ textarea {
 .menu__item:last-child .menu__item-body {
   padding: 57px 0 43px;
   padding: 3.5625rem 0 2.6875rem;
+}
+@media screen and (min-width: 768px) {
+  .menu__item:last-child .menu__item-body {
+    padding: 5.0625rem 0 2.5rem;
+  }
 }
 .menu__item:last-child .menu__item-title {
   margin-bottom: 7px;
@@ -1657,12 +1724,15 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .menu__item:last-child .menu__item-img {
-    width: 21.875rem;
+    width: 22.5rem;
+    top: -18.125rem;
   }
 }
 @media screen and (min-width: 1100px) {
   .menu__item:last-child .menu__item-img {
     width: 26.6875rem;
+    left: 46%;
+    top: -22.1875rem;
   }
 }
 
@@ -1786,6 +1856,12 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .menu__item-pfc {
+    font-size: 1.125rem;
+    letter-spacing: 0.07em;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .menu__item-pfc {
     font-size: 1.5rem;
   }
 }
@@ -1807,6 +1883,7 @@ textarea {
   .menu__item-recommend {
     padding: 0.5625rem 0;
     width: 15.6875rem;
+    margin-bottom: 2.125rem;
   }
 }
 
@@ -1849,7 +1926,7 @@ textarea {
 @media screen and (min-width: 768px) {
   .mv {
     height: 40.625rem;
-    padding-top: 5.875rem;
+    padding-top: 5.625rem;
   }
 }
 
@@ -1891,6 +1968,7 @@ textarea {
     font-size: 2rem;
     font-weight: 700;
     margin-left: 1.25rem;
+    line-height: 2;
   }
 }
 .mv__text span {
@@ -1907,8 +1985,8 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .mv__text span {
-    padding: 0.4375rem;
-    padding-right: 0.9375rem;
+    padding: 0;
+    padding-right: 1.25rem;
     margin-left: -1.25rem;
   }
 }
@@ -1958,7 +2036,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .shop__map {
-    margin-bottom: 5rem;
+    margin-bottom: 4.6875rem;
   }
 }
 
@@ -1988,12 +2066,12 @@ textarea {
     max-width: unset;
     margin: 0;
     margin-right: 5%;
-    min-width: 40%;
+    min-width: 45%;
   }
 }
 @media screen and (min-width: 1100px) {
   .shop__body {
-    margin-right: 10%;
+    margin-right: 12%;
   }
 }
 
@@ -2025,6 +2103,11 @@ textarea {
   font-size: 1rem;
   font-family: "Noto Sans JP", sans-serif;
 }
+@media screen and (min-width: 768px) {
+  .shop__janame {
+    font-size: 1.0625rem;
+  }
+}
 
 .shop__address {
   font-size: 16px;
@@ -2041,6 +2124,7 @@ textarea {
     font-size: 1.125rem;
     margin-bottom: 1.0625rem;
     line-height: 2;
+    padding-left: 0;
   }
 }
 
@@ -2055,7 +2139,8 @@ textarea {
 @media screen and (min-width: 768px) {
   .shop__time {
     font-size: 1.125rem;
-    line-height: 2;
+    line-height: 1.9;
+    padding-left: 0;
   }
 }
 .shop__time dt {
@@ -2063,6 +2148,11 @@ textarea {
   min-width: 4.375rem;
   margin-right: 15px;
   margin-right: 0.9375rem;
+}
+@media screen and (min-width: 768px) {
+  .shop__time dt {
+    margin-right: 1.25rem;
+  }
 }
 
 .shop__flex {
@@ -2107,9 +2197,14 @@ textarea {
 @media screen and (min-width: 768px) {
   .shop__card {
     max-width: unset;
-    width: 71.25rem;
     max-width: 100%;
-    padding: 1.875rem 2rem 2.5rem;
+    padding: 1.875rem 2rem 1.875rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .shop__card-inner {
+    max-width: 75rem;
   }
 }
 
@@ -2188,7 +2283,7 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .shop__card-body {
-    padding: 0 18% 0 25%;
+    padding: 0 21% 0 23%;
   }
 }
 
@@ -2212,11 +2307,9 @@ textarea {
 }
 @media screen and (min-width: 768px) {
   .shop__card-text {
-    display: inline;
-    background: -webkit-gradient(linear, left top, left bottom, from(#c4c4c4), to(#c4c4c4)) 0 100%/0 0.0625rem no-repeat;
-    background: linear-gradient(#c4c4c4, #c4c4c4) 0 100%/0 0.0625rem no-repeat;
-    background-position: 100% 100%;
-    background-size: 100% 0.0625rem;
+    background-size: 2.625rem 2.625rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(2.5625rem, transparent), color-stop(2.5625rem, #c4c4c4));
+    background-image: linear-gradient(180deg, transparent 2.5625rem, #c4c4c4 2.5625rem);
   }
 }
 
@@ -2251,5 +2344,13 @@ textarea {
 @media screen and (min-width: 768px) {
   .shop__card-entext2 {
     bottom: -1.5625rem;
+    right: -2.5rem;
+    width: 18.75rem;
+  }
+}
+@media screen and (min-width: 1100px) {
+  .shop__card-entext2 {
+    right: -1.25rem;
+    width: 21.25rem;
   }
 }

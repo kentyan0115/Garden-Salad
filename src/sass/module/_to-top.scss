@@ -7,9 +7,11 @@
   right: rem(16);
   bottom: rem(305);
   z-index: 100;
+  cursor: pointer;
   @include mq(md) {
     width: rem(120); 
     bottom: rem(272);
+    right: 4%;
   }
   &:hover {
     opacity: 1;

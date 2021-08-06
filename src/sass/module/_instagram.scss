@@ -46,7 +46,7 @@
   z-index: 30;
   @include mq(md) {
     width: rem(360); 
-    padding: rem(17) 0;
+    padding: rem(15) 0;
     font-size: rem(30);
     margin-bottom: rem(28);
   }
@@ -61,6 +61,8 @@
     position: relative;
     margin-bottom: rem(34);
     display: inline-block;
+    font-size: rem(17);
+    padding: 0;
     &::before, &::after {
       position: absolute;
       content: "";
@@ -128,6 +130,7 @@
   border: rem(1) solid $font-color;
   display: block;
   width: rem(260);
+  max-width: 100%;
   text-align: center;
   height: rem(56);
   line-height: rem(54);
@@ -135,6 +138,8 @@
   letter-spacing: 0.03em;
   @include mq(md) {
     width: rem(300); 
+    padding-right: 0;
+    padding-left: 0;
   }
   margin: 0 auto;
   &:hover {

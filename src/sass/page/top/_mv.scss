@@ -9,7 +9,7 @@
   margin: rem(-2) 0;
   @include mq(md) {
     height: rem(650); 
-    padding-top: rem(94);
+    padding-top: rem(90);
   }
 }
 
@@ -44,6 +44,7 @@
     font-size: rem(32); 
     font-weight: 700;
     margin-left: rem(20);
+    line-height: 2;
   }
 
   span {
@@ -54,8 +55,8 @@
     padding: rem(5) 0;
     padding-right: rem(10);
     @include mq(md) {
-      padding: rem(7);
-      padding-right: rem(15);
+      padding: 0;
+      padding-right: rem(20);
       margin-left: rem(-20);
     }
   }

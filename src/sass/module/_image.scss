@@ -2,8 +2,12 @@
   image
 */
 .image {
-  height: rem(350);
-  // height: 100%;
-  background: url(../img/image-1-sp.jpg) no-repeat center top / cover;
+  height: rem(250);
   z-index: 20;
+  @include mq(sm) {
+    height: rem(350);
+  }
+  @include mq(xl) {
+    height: rem(450);
+  }
 }

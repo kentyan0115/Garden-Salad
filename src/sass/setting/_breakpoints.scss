@@ -2,11 +2,12 @@
 
 //ブレイクポイント
 $breakpoints: (
-  sm: 600,
+  sm: 500,
   md: 767,
   lg: 1023,
   xl: 1099,
-  xxl: 1299,
+  xxl: 1599,
+  xxxl: 1899,
 );
 
 //スクリーンサイズ
@@ -20,5 +21,6 @@ $mediaquerys: (
   lg: "screen and (min-width: #{map-get($breakpoints,'lg') + 1}px)",
   xl: "screen and (min-width: #{map-get($breakpoints,'xl') + 1}px)",
   xxl: "screen and (min-width: #{map-get($breakpoints,'xxl') + 1}px)",
+  xxxl: "screen and (min-width: #{map-get($breakpoints,'xxxl') + 1}px)",
   ie: "(-ms-high-contrast: active), (-ms-high-contrast: none)",
 );

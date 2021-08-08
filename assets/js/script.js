@@ -1,28 +1,7 @@
 "use strict";
 
 jQuery(function () {
-  // ドロワー 
-  jQuery('.hamburger').on('click', function () {
-    jQuery(this).toggleClass('hamburger--active');
-    jQuery('body').toggleClass('body--fixed');
-
-    if (jQuery(this).hasClass('hamburger--active')) {
-      jQuery('.drawer').addClass('drawer--active');
-    } else {
-      jQuery('.drawer').removeClass('drawer--active');
-    }
-  });
-  jQuery('.drawer__item').on('click', function () {
-    jQuery('.hamburger').toggleClass('hamburger--active');
-    jQuery('body').removeClass('body--fixed');
-
-    if (jQuery(this).hasClass('drawer--active')) {
-      jQuery('.drawer').addClass('drawer--active');
-    } else {
-      jQuery('.drawer').removeClass('drawer--active');
-    }
-  }); // スムーススクロール
-
+  // スムーススクロール
   jQuery('a[href^="#about"]').on('click', function () {
     var speed = 300;
     var id = jQuery(this).attr("href");
@@ -88,19 +67,40 @@ jQuery(function () {
       jQuery('.js-submit').prop('disabled', true);
     }
   }); //  パララックス
+  // $(window).on('scroll', function(){
+  //   var scrollTop = $(window).scrollTop();
+  //   var bgPosition = scrollTop / 15; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
+  //   if (window.matchMedia( "(min-width: 768px)" ).matches) {
+  //     var bgPosition = scrollTop / 18; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
+  //   }
+  //   if(bgPosition){
+  //     $('.image1').css('background-position', 'center top -'+ bgPosition + 'px');
+  //   }
+  // });
+  // $(window).on('scroll', function(){
+  //   var scrollTop = $(window).scrollTop();
+  //   var bgPosition = scrollTop / 26; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
+  //   if (window.matchMedia( "(min-width: 768px)" ).matches) {
+  //     var bgPosition = scrollTop / 18; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
+  //   }
+  //   if(bgPosition){
+  //     $('.image2').css('background-position', 'center top -'+ bgPosition + 'px');
+  //   }
+  // });
+  // Micromodal
 
-  jQuery(function () {
-    var target1 = jQuery(".image");
-    var targetPosOT1 = target1.offset().top;
-    var targetFactor = 0.2;
-    var windowH = jQuery(window).height();
-    var scrollYStart1 = targetPosOT1 - windowH;
-    jQuery(window).on('scroll', function () {
-      var scrollY = jQuery(this).scrollTop();
+  MicroModal.init({
+    disableScroll: true
+  }); // 背景固定
 
-      if (scrollY > scrollYStart1) {
-        target1.css('background-position-y', (scrollY - targetPosOT1) * targetFactor + 'px');
-      }
-    });
+  jQuery('.js-modal-open').on('click', function () {
+    jQuery('body').css('overflow', 'hidden');
+  });
+  jQuery('.js-modal-close').on('click', function () {
+    jQuery('body').css('overflow', 'auto');
+  }); // aタグの遷移無効化
+
+  jQuery('.form__privacy').on('click', function () {
+    return false;
   });
 });

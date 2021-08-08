@@ -61,4 +61,8 @@
   @include mq(xl) {
     font-size: rem(280);
   }
+  @include mq(xxl) {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }

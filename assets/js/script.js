@@ -102,5 +102,8 @@ jQuery(function () {
 
   jQuery('.form__privacy').on('click', function () {
     return false;
-  });
+  }); // simpleParallax.js
+
+  var image = document.querySelectorAll('.thumbnail');
+  new simpleParallax(image);
 });

@@ -2,12 +2,12 @@
   image
 */
 .image {
-  height: rem(250);
   z-index: 20;
-  @include mq(sm) {
-    height: rem(350);
-  }
-  @include mq(xl) {
-    height: rem(450);
-  }
+  // height: rem(250);
+  // @include mq(sm) {
+  //   height: rem(320);
+  // }
+  // @include mq(xl) {
+  //   height: rem(450);
+  // }
 }

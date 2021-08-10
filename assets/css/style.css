@@ -791,43 +791,7 @@ textarea {
   image
 */
 .image {
-  height: 250px;
-  height: 15.625rem;
   z-index: 20;
-}
-@media screen and (min-width: 501px) {
-  .image {
-    height: 21.875rem;
-  }
-}
-@media screen and (min-width: 1100px) {
-  .image {
-    height: 28.125rem;
-  }
-}
-
-/*
-  image1
-*/
-.image1 {
-  background: url(../img/image-1-sp.jpg) no-repeat center center/cover;
-}
-@media screen and (min-width: 768px) {
-  .image1 {
-    background: url(../img/image-1.jpg) no-repeat center center/cover;
-  }
-}
-
-/*
-  image2
-*/
-.image2 {
-  background: url(../img/image-2-sp.jpg) no-repeat center center/cover;
-}
-@media screen and (min-width: 768px) {
-  .image2 {
-    background: url(../img/image-2.jpg) no-repeat center center/cover;
-  }
 }
 
 /*

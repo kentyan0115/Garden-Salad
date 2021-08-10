@@ -82,26 +82,26 @@ jQuery(function () {
 
   //  パララックス
   // $(window).on('scroll', function(){
-    
+
   //   var scrollTop = $(window).scrollTop();
   //   var bgPosition = scrollTop / 15; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
   //   if (window.matchMedia( "(min-width: 768px)" ).matches) {
   //     var bgPosition = scrollTop / 18; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
   //   }
-  
+
   //   if(bgPosition){
   //     $('.image1').css('background-position', 'center top -'+ bgPosition + 'px');
   //   }
   // });
 
   // $(window).on('scroll', function(){
-    
+
   //   var scrollTop = $(window).scrollTop();
   //   var bgPosition = scrollTop / 26; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
   //   if (window.matchMedia( "(min-width: 768px)" ).matches) {
   //     var bgPosition = scrollTop / 18; //スクロール後のポジションを指定（値を大きくすると移動距離が小さくなる）
   //   }
-  
+
   //   if(bgPosition){
   //     $('.image2').css('background-position', 'center top -'+ bgPosition + 'px');
   //   }
@@ -125,5 +125,8 @@ jQuery(function () {
   });
 
 
+  // simpleParallax.js
+  var image = document.querySelectorAll('.thumbnail');
+  new simpleParallax(image);
 
 });
